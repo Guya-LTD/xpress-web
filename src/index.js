@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
+import ServiceRoute from 'routes/ServiceRoute';
 
 ReactDOM.render(
   <React.StrictMode>
-    <p>Xpress web</p>
+    <ServiceRoute />
   </React.StrictMode>,
   document.getElementById('root')
 );
