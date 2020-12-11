@@ -30,8 +30,8 @@ const Index = (props) => {
     const headerClose = <CloseOutline size="20px" />
 
     const headerBrand = {
-        small: <Logo src="/images/xpress-logo.png" size="sm"/>,
-        large: <Logo src="/images/xpress-logo.png" size="sm"/>
+        small: <Logo src={process.env.PUBLIC_URL + "/images/xpress-logo.png"} size="sm"/>,
+        large: <Logo src={process.env.PUBLIC_URL + "/images/xpress-logo.png"} size="sm"/>
     }
 
     const headerSearch = {

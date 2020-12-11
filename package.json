@@ -2,6 +2,7 @@
   "name": "xpress-web",
   "version": "0.0.0-development",
   "private": true,
+  "homepage": "/xpress",
   "dependencies": {
     "@bit/guya-ltd.gcss.atoms.button": "^0.0.6",
     "@bit/guya-ltd.gcss.atoms.link": "^0.0.5",
