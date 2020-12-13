@@ -15,7 +15,7 @@ const base = '/:locale(en|am)?';
 const ServiceRoute = () => (
     <Router basename={process.env.PUBLIC_URL}>
         <Switch>
-          <Route exact path="/" component={IndexPage} />
+          <Route exact path="/:locale(en|am)?" component={IndexPage} />
         
           <Route path="/:locale(en|am)?/error" component={Error500Page} />
           <Route path="*" component={Error404Page} />
