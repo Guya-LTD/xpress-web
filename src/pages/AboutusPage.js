@@ -131,7 +131,7 @@ const RequestPickup = (props) => {
                                 lists={
                                     [
                                         { state: 'none', link: <Link theme="red" cls="white" href={'/' + locale + '/'}><I18n t="home" /> &nbsp;</Link> },
-                                        { state: 'active', link: <Link theme="red" cls="white" href="#"><I18n t="request_pickup" /></Link>}
+                                        { state: 'active', link: <Link theme="red" cls="white" href="#"><I18n t="about_us" /></Link>}
                                     ]
                                 }
                             />
@@ -143,64 +143,16 @@ const RequestPickup = (props) => {
             footer={null}
         >
             <div>
-                    <h1 className="theme-red typography typography--header">Request A Pickup</h1>
-                    <br/>
-                    <div className="container container--rnd" style={{width: "100%"}}>
-                        <div className="container__body" style={{overflowY: "visible"}}>
-                            <div>
-                                <Typography size='h2' theme="red">Enter Pickup Information</Typography>
-                                <br />
-                                <Typography size="xs" theme="red">Required fields are indicated with *Required.</Typography>
-                            </div>
-                            <div className="divider" />
-                            <br />
-                            <Blockquote
-                                type='notification'
-                                theme='royal-blue'
-                                variant='danger'
-                                header={<Typography size="xs">Want a free option?</Typography>}
-                                body={
-                                    <p>
-                                    <Link href="to-stores-and-location" theme="red">Drop off your package,</Link>In the Guya Store®, or other nearby location.
-                                    </p>
-                                }
-                            />
-                            <br />
-                            <div style={{border: "1px solid #c7c7c7", padding: "30px", textAlign: "center"}}>
-                                <span style={{marginRight: "10px"}}>
-                                    <Car />
-                                </span>
-                                <span>
-                                    <Typography size='h3' theme="red">Pickup Information and Location</Typography>
-                                </span>
-                                <br/>
-                                <div className="divider" />
-                                <br /><br />
-                                <div className="row">
-                                    <div className="col-md-6">
-                                        <div className="col-md-10">
-                                            <Field theme="red" label="Company or Name: *" description="" placeholder="" />
-                                            <br /><br />
-                                            <Field theme="red" label="Email address (optional):" description="" placeholder="" />
-                                            <br /><br />
-                                            <Field theme="red" label="Phone number: *" description="" placeholder="" />
-                                            <br /><br />
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <div className="col-md-10">
-                                            <Field theme="red" label="Company or Name: *" description="" placeholder="" />
-                                            <br /><br />
-                                            <Field theme="red" label="Email address (optional):" description="" placeholder="" />
-                                            <br /><br />
-                                            <Field theme="red" label="Phone number: *" description="" placeholder="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <h1 className="theme-red typography typography--header"><I18n t='about_us' /></h1>
+            </div>
+            <div className="row">
+                <div className="col-xs-6" style={{color: '#dadada', fontFamily: "APTypeProText", lineHeight: '1.6'}}>
+                    <I18n t='about_us_details' />
                 </div>
+            </div>   
+            <br />
+            <br />
+            <br /> 
         </Xpressview>
     )
 }

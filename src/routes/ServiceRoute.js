@@ -9,6 +9,7 @@ import Error404Page from 'pages/Error404Page';
 import Error500Page from 'pages/Error500Page';
 import IndexPage from 'pages/IndexPage';
 import RequestPickup from 'pages/RequestPickup';
+import AboutUs from 'pages/AboutusPage';
 
 // Match locales with regular expression containing each locale separated by `|`
 const base = '/:locale(en|am)?';
@@ -18,7 +19,7 @@ const ServiceRoute = () => (
         <Switch>
           <Route exact path="/:locale(en|am)?" component={IndexPage} />
           <Route exact path="/:locale(en|am)?/request-pickup" component={RequestPickup} />
-        
+          <Route exact path="/:locale(en|am)?/about-us" component={AboutUs} />
           <Route path="/:locale(en|am)?/error" component={Error500Page} />
           <Route path="*" component={Error404Page} />
         </Switch>

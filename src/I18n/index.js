@@ -32,7 +32,8 @@ const translations = {
        'width_unit': 'cm',
        'height': 'Height',
        'height_unit': 'cm',
-       'home': 'Home'
+       'home': 'Home',
+       'about_us_details': 'Over our long history, our social purpose and commitment to the community has remained the same; to create connections and opportunities that matter to every Ethiopian.'
     },
     am: {
         http: httpAm,
@@ -58,7 +59,8 @@ const translations = {
         'width_unit': 'ሴ.ሜ.',
         'height': 'ቁመት',
         'height_unit': 'ሴ.ሜ.',
-        'home': 'መግቢያ'
+        'home': 'መግቢያ',
+        'about_us_details': 'በረጅም ታሪካችን ውስጥ ማህበራዊ ዓላማችን እና ለህብረተሰቡ ያለን ቁርጠኝነት ተመሳሳይ ሆኖ ቆይቷል ፡፡ ለእያንዳንዱ ኢትዮጵያዊ አስፈላጊ የሆኑ ግንኙነቶችን እና ዕድሎችን ለመፍጠር ፡፡'
     }
 }
 
