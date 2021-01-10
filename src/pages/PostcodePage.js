@@ -25,10 +25,55 @@ import {
     Car
 } from 'react-ionicons-icon';
 import I18n from 'I18n';
+import TableContainer from 'pages/TableContainer';
 
-const RequestPickup = (props) => {
+const Postcode = (props) => {
     /* Localization */
     const locale = props.match.params.locale == null ? 'en' : props.match.params.locale;
+
+    const columns = useMemo(
+        () => [
+            {
+                Header: <I18n t="date" />,
+                accessor: 'created_at'
+            },
+            {
+                Header: <I18n t="email" />,
+                accessor: 'email'
+            },
+            {
+                Header: <I18n t="name" />,
+                accessor: 'name'
+            },
+            {
+                Header: <I18n t="phone_number" />,
+                accessor: 'pnum'
+            },
+            {
+                Header: <I18n t="role" />,
+                accessor: 'role.name'
+            },
+            {
+                Header: <I18n t="status" />,
+                accessor: 'credential.blocked',
+                Cell: ({ cell }) => {
+                    const { value } = cell;
+                    if(value)
+                        return <Tip theme="red" variant="red"><I18n t="blocked" /></Tip>
+                    else
+                        return <Tip theme="royal-blue" variant="green"><I18n t="active" /></Tip>
+                }
+            },
+            {
+                Header: <SettingsOutline size="20px" />,
+                accessor: 'id',
+                Cell: ({ cell }) => {
+                    const { value } = cell;
+                    return <RouterLink to={'/' + locale + '/home/users/' + value} ><CreateOutline size="20px" /></RouterLink>
+                }
+            }
+        ]
+    )
 
     /* Index Header open icon */
     const headerOpen =  <MenuOutline size="45px"/>
@@ -147,57 +192,7 @@ const RequestPickup = (props) => {
                     <br/>
                     <div className="container container--rnd" style={{width: "100%"}}>
                         <div className="container__body" style={{overflowY: "visible"}}>
-                            <div>
-                                <Typography size='h2' theme="red">Enter Pickup Information</Typography>
-                                <br />
-                                <Typography size="xs" theme="red">Required fields are indicated with *Required.</Typography>
-                            </div>
-                            <div className="divider" />
-                            <br />
-                            <Blockquote
-                                type='notification'
-                                theme='royal-blue'
-                                variant='danger'
-                                header={<Typography size="xs">Want a free option?</Typography>}
-                                body={
-                                    <p>
-                                    <Link href="to-stores-and-location" theme="red">Drop off your package,</Link>In the Guya Store®, or other nearby location.
-                                    </p>
-                                }
-                            />
-                            <br />
-                            <div style={{border: "1px solid #c7c7c7", padding: "30px", textAlign: "center"}}>
-                                <span style={{marginRight: "10px"}}>
-                                    <Car />
-                                </span>
-                                <span>
-                                    <Typography size='h3' theme="red">Pickup Information and Location</Typography>
-                                </span>
-                                <br/>
-                                <div className="divider" />
-                                <br /><br />
-                                <div className="row">
-                                    <div className="col-md-6">
-                                        <div className="col-md-10">
-                                            <Field theme="red" label="Company or Name: *" description="" placeholder="" />
-                                            <br /><br />
-                                            <Field theme="red" label="Email address (optional):" description="" placeholder="" />
-                                            <br /><br />
-                                            <Field theme="red" label="Phone number: *" description="" placeholder="" />
-                                            <br /><br />
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <div className="col-md-10">
-                                            <Field theme="red" label="Company or Name: *" description="" placeholder="" />
-                                            <br /><br />
-                                            <Field theme="red" label="Email address (optional):" description="" placeholder="" />
-                                            <br /><br />
-                                            <Field theme="red" label="Phone number: *" description="" placeholder="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            fds
                         </div>
                     </div>
                 </div>
@@ -205,4 +200,4 @@ const RequestPickup = (props) => {
     )
 }
 
-export default RequestPickup;
+export default Postcode;

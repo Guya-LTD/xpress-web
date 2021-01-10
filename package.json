@@ -19,6 +19,7 @@
     "@bit/guya-ltd.gcss.templates.httperror": "^0.0.1",
     "@bit/guya-ltd.gcss.templates.xpresshome": "^0.0.4",
     "@bit/guya-ltd.gcss.templates.xpressview": "^0.0.1",
+    "@bit/paclife.egghead.footer": "^0.0.16",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -28,7 +29,8 @@
     "react-ionicons-icon": "^0.1.2",
     "react-router-dom": "^5.2.0",
     "react-router-i18n": "^1.0.1",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "react-table": "^7.6.2"
   },
   "devDependencies": {
     "commitizen": "^4.1.2",

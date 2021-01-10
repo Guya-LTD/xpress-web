@@ -1291,6 +1291,68 @@
     prop-types "15.7.2"
     react "^16.13.1"
 
+"@bit/paclife.egghead.constants.typography@0.0.1":
+  version "0.0.1"
+  resolved "https://node.bit.dev/paclife.egghead.constants.typography/-/paclife.egghead.constants.typography-0.0.1.tgz#62c4f60663bfa20d944b316d82f561ffb13c18d0"
+  integrity sha1-YsT2BmO/og2USzFtgvVh/7E8GNA=
+
+"@bit/paclife.egghead.footer@^0.0.16":
+  version "0.0.16"
+  resolved "https://node.bit.dev/paclife.egghead.footer/-/paclife.egghead.footer-0.0.16.tgz#c26c449d35ba1dff05aa90419e06656e194fa9cc"
+  integrity sha1-wmxEnTW6Hf8FqpBBngZlbhlPqcw=
+  dependencies:
+    "@bit/paclife.egghead.constants.typography" "0.0.1"
+    "@bit/paclife.egghead.grid" "0.0.8"
+    "@bit/paclife.egghead.icon" "0.0.9"
+    "@bit/paclife.egghead.styles.main" "0.0.3"
+    "@bit/paclife.egghead.svg.logo-white-text" "0.0.3"
+    "@bit/paclife.egghead.svg.ok" "0.0.3"
+    "@bit/paclife.egghead.typography" "0.0.5"
+    gatsby-plugin-mailchimp "^5.2.2"
+
+"@bit/paclife.egghead.grid@0.0.8":
+  version "0.0.8"
+  resolved "https://node.bit.dev/paclife.egghead.grid/-/paclife.egghead.grid-0.0.8.tgz#f76293113f395b8d140e6df58a5e1ed171fdbea6"
+  integrity sha1-92KTET85W40UDm31il4e0XH9vqY=
+  dependencies:
+    "@bit/paclife.egghead.styles.main" "0.0.3"
+
+"@bit/paclife.egghead.icon@0.0.9":
+  version "0.0.9"
+  resolved "https://node.bit.dev/paclife.egghead.icon/-/paclife.egghead.icon-0.0.9.tgz#56f755ca1233c40356389e102a645a18c0cdf064"
+  integrity sha1-VvdVyhIzxANWOJ4QKmRaGMDN8GQ=
+  dependencies:
+    "@bit/paclife.egghead.styles.main" "0.0.3"
+
+"@bit/paclife.egghead.styles.design-tokens@0.0.3":
+  version "0.0.3"
+  resolved "https://node.bit.dev/paclife.egghead.styles.design-tokens/-/paclife.egghead.styles.design-tokens-0.0.3.tgz#cb5e22e84ee5d6f562eee94585866bd1f793b15f"
+  integrity sha1-y14i6E7l1vVi7ulFhYZr0feTsV8=
+
+"@bit/paclife.egghead.styles.main@0.0.3":
+  version "0.0.3"
+  resolved "https://node.bit.dev/paclife.egghead.styles.main/-/paclife.egghead.styles.main-0.0.3.tgz#8fde71b612819182b8a331158acce1dda0da2566"
+  integrity sha1-j95xthKBkYK4ozEViszh3aDaJWY=
+  dependencies:
+    "@bit/paclife.egghead.styles.design-tokens" "0.0.3"
+
+"@bit/paclife.egghead.svg.logo-white-text@0.0.3":
+  version "0.0.3"
+  resolved "https://node.bit.dev/paclife.egghead.svg.logo-white-text/-/paclife.egghead.svg.logo-white-text-0.0.3.tgz#b153e337efc8bc92e4a59b201339fb8e6c4d426c"
+  integrity sha1-sVPjN+/IvJLkpZsgEzn7jmxNQmw=
+
+"@bit/paclife.egghead.svg.ok@0.0.3":
+  version "0.0.3"
+  resolved "https://node.bit.dev/paclife.egghead.svg.ok/-/paclife.egghead.svg.ok-0.0.3.tgz#e0e8f380ea5227a14f70bab6e4dcb1852844e976"
+  integrity sha1-4OjzgOpSJ6FPcLq25NyxhShE6XY=
+
+"@bit/paclife.egghead.typography@0.0.5":
+  version "0.0.5"
+  resolved "https://node.bit.dev/paclife.egghead.typography/-/paclife.egghead.typography-0.0.5.tgz#f7a9fb8206027c2e9f42cb59e7f7ca85c99f963b"
+  integrity sha1-96n7ggYCfC6fQstZ5/fKhcmfljs=
+  dependencies:
+    "@bit/paclife.egghead.styles.main" "0.0.3"
+
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@cnakazawa/watch/-/watch-1.0.4.tgz#f864ae85004d0fcab6f50be9141c4da368d1656a"
@@ -4496,7 +4558,7 @@ dateformat@^3.0.0:
   resolved "https://registry.yarnpkg.com/dateformat/-/dateformat-3.0.3.tgz#a6e37499a4d9a9cf85ef5872044d62901c9889ae"
   integrity sha512-jyCETtSl3VMZMWeRo7iY1FL19ges1t55hMo5yaam4Jrsm5EPL89UQkoQRyiI+Yf4k8r2ZpdngkV8hr1lIdjb3Q==
 
-debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.9:
+debug@2.6.9, debug@^2.1.3, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.9:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
   integrity sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
@@ -4959,6 +5021,11 @@ elliptic@^6.5.3:
     inherits "^2.0.1"
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.0"
+
+email-validator@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/email-validator/-/email-validator-2.0.4.tgz#b8dfaa5d0dae28f1b03c95881d904d4e40bfe7ed"
+  integrity sha512-gYCwo7kh5S3IDyZPLZf6hSS0MnZT8QmJFqYvbqlDZSbwdZlY6QZWxJ4i/6UhITOJ4XzyI647Bm2MXKCLqnJ4nQ==
 
 emoji-regex@^7.0.1, emoji-regex@^7.0.2:
   version "7.0.3"
@@ -6051,6 +6118,14 @@ functional-red-black-tree@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
+
+gatsby-plugin-mailchimp@^5.2.2:
+  version "5.2.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-mailchimp/-/gatsby-plugin-mailchimp-5.2.2.tgz#bed94cb70b9d91267329a5e6a0220e821d8ff6e8"
+  integrity sha512-O9JizVPJAe5YT1QAHZNRh1xUVdPnfayfIRhsBULiK2629TQRvEzzQxTDbt/WZU02cVm8415Fx2CneaxYKLt0ag==
+  dependencies:
+    email-validator "^2.0.4"
+    jsonp "^0.2.1"
 
 gauge@~2.7.3:
   version "2.7.4"
@@ -8060,6 +8135,13 @@ jsonify@~0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/jsonify/-/jsonify-0.0.0.tgz#2c74b6ee41d93ca51b7b5aaee8f503631d252a73"
   integrity sha1-LHS27kHZPKUbe1qu6PUDYx0lKnM=
+
+jsonp@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/jsonp/-/jsonp-0.2.1.tgz#a65b4fa0f10bda719a05441ea7b94c55f3e15bae"
+  integrity sha1-pltPoPEL2nGaBUQep7lMVfPhW64=
+  dependencies:
+    debug "^2.1.3"
 
 jsonparse@^1.2.0:
   version "1.3.1"
@@ -11387,6 +11469,11 @@ react-scripts@3.4.3:
     workbox-webpack-plugin "4.3.1"
   optionalDependencies:
     fsevents "2.1.2"
+
+react-table@^7.6.2:
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/react-table/-/react-table-7.6.2.tgz#b60932fa6d457c2bca0da49815cd6a8fe9451f77"
+  integrity sha512-urwNZTieb+xg/+BITUIrqdH5jZfJlw7rKVAAq25iXpBPwbQojLCEKJuGycLbVwn8fzU+Ovly3y8HHNaLNrPCvQ==
 
 react@^16.13.1:
   version "16.14.0"
