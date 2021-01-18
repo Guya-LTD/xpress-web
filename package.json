@@ -33,7 +33,7 @@
     "react-table": "^7.6.2"
   },
   "devDependencies": {
-    "commitizen": "^4.1.2",
+    "commitizen": "^4.2.3",
     "semantic-release": "^17.1.1"
   },
   "scripts": {
